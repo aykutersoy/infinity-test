@@ -1,0 +1,3 @@
+MAILLTO="support@infinity.co"
+
+* * * * * cronuser /usr/bin/php index.php
