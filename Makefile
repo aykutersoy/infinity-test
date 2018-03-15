@@ -6,3 +6,8 @@ schemaCheck:
 
 cron:
 	php -f index.php
+
+createCron:
+	echo 'MAILTO="support@infinity.co";' > cronjob;
+	echo '\r' >> cronjob;
+	echo '* * * * * root cd '$(PWD)'; make cron' >> cronjob
